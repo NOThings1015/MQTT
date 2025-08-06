@@ -1,0 +1,81 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+APP_LOGIC_H	include/app_logic.h	14;"	d
+CA_CERT_FILE	include/mqtt_config.h	23;"	d
+CLIENT_ID	include/mqtt_config.h	19;"	d
+CONNECT_TIMEOUT_MS	include/mqtt_config.h	26;"	d
+HOST	include/mqtt_config.h	17;"	d
+MQTT_CLEAN_SESSION	include/mqtt_config.h	31;"	d
+MQTT_CLIENT_H_	include/mqtt_client.h	14;"	d
+MQTT_KEEP_ALIVE_SEC	include/mqtt_config.h	30;"	d
+MQ_CONFIG_H_	include/mqtt_config.h	14;"	d
+NETWORK_BUFFER_SIZE	include/mqtt_config.h	25;"	d
+NETWORK_H	include/network.h	14;"	d
+PASSWORD	include/mqtt_config.h	21;"	d
+PORT	include/mqtt_config.h	18;"	d
+SUBSCRIBE_TIMEOUT_MS	include/mqtt_config.h	27;"	d
+TOPIC	include/mqtt_config.h	22;"	d
+USERNAME	include/mqtt_config.h	20;"	d
+command_name	src/app_logic.c	/^				char command_name[32] = {0};$/;"	l
+command_ptr	src/app_logic.c	/^			char *command_ptr = strstr(payload, "\\"command_name\\":\\"");$/;"	l
+connectInfo	src/mqtt_client.c	/^	MQTTConnectInfo_t connectInfo = {$/;"	l
+eventCallback	src/app_logic.c	/^void eventCallback(MQTTContext_t *context, MQTTPacketInfo_t *packetInfo, $/;"	f
+fixedBuffer	src/mqtt_client.c	/^	MQTTFixedBuffer_t fixedBuffer = {$/;"	l
+getTimeFunc	src/mqtt_client.c	/^static uint32_t getTimeFunc(void) $/;"	f	file:
+get_mqtt_context	src/mqtt_client.c	/^MQTTContext_t *get_mqtt_context(void) $/;"	f
+get_network_context	src/network.c	/^NetworkContext_t *get_network_context(void) $/;"	f
+hints	src/network.c	/^	struct addrinfo hints = {.ai_family = AF_INET, .ai_socktype = SOCK_STREAM};$/;"	l
+humidity	src/app_logic.c	/^	float humidity = 45.5;$/;"	l
+main	src/mqtt_main.c	/^int main() $/;"	f
+mqttContext	src/mqtt_client.c	/^static MQTTContext_t mqttContext = {0};$/;"	v	file:
+mqtt_cleanup	src/mqtt_client.c	/^void mqtt_cleanup(void) $/;"	f
+mqtt_client_init	src/mqtt_client.c	/^int mqtt_client_init(void) $/;"	f
+mqtt_connect_to_huawei	src/mqtt_client.c	/^int mqtt_connect_to_huawei(void) $/;"	f
+mqtt_run_main_loop	src/mqtt_client.c	/^void mqtt_run_main_loop(void) $/;"	f
+mqtt_subscribe_to_topics	src/mqtt_client.c	/^int mqtt_subscribe_to_topics(void) $/;"	f
+networkBuffer	src/mqtt_client.c	/^static uint8_t networkBuffer[NETWORK_BUFFER_SIZE];$/;"	v	file:
+networkContext	src/network.c	/^static NetworkContext_t networkContext = {0};$/;"	v	file:
+network_cleanup	src/network.c	/^void network_cleanup(void) $/;"	f
+network_connect	src/network.c	/^int network_connect(void)$/;"	f
+network_init	src/network.c	/^int network_init(void)$/;"	f
+network_recv	src/network.c	/^int32_t network_recv(void *buffer, size_t len) $/;"	f
+network_send	src/network.c	/^int32_t network_send(const void *buffer, size_t len) $/;"	f
+payload	src/app_logic.c	/^		const char *payload = deserializedInfo->pPublishInfo->pPayload;$/;"	l
+payloadLen	src/app_logic.c	/^		int payloadLen = (int)deserializedInfo->pPublishInfo->payloadLength;$/;"	l
+pubInfo	src/app_logic.c	/^	MQTTPublishInfo_t pubInfo = {$/;"	l
+received	src/network.c	/^	int received = SSL_read(networkContext.ssl, buffer, len);$/;"	l
+report_payload	src/app_logic.c	/^	char report_payload[256];$/;"	l
+report_temperature_humidity	src/app_logic.c	/^void report_temperature_humidity(void) $/;"	f
+report_topic	src/app_logic.c	/^	const char *report_topic = "$oc\/devices\/6888d7bfd582f20018408d5d_Temp_Humi\/sys\/properties\/report";$/;"	l
+request_id	src/app_logic.c	/^			char request_id[128] = {0};$/;"	l
+request_ptr	src/app_logic.c	/^			char *request_ptr = strstr(topic, "request_id");$/;"	l
+res	src/network.c	/^	struct addrinfo *res;$/;"	l
+respInfo	src/app_logic.c	/^	MQTTPublishInfo_t respInfo = {$/;"	l
+response_payload	src/app_logic.c	/^	char response_payload[64];$/;"	l
+response_topic	src/app_logic.c	/^	char response_topic[256];$/;"	l
+send_command_response	src/app_logic.c	/^void send_command_response(char *request_id, int result_code)$/;"	f
+sent	src/network.c	/^	int sent = SSL_write(networkContext.ssl, buffer, len);$/;"	l
+serverAddr	src/network.c	/^	struct sockaddr_in serverAddr = {$/;"	l
+service_id	src/app_logic.c	/^				char service_id[32] = {0};$/;"	l
+service_ptr	src/app_logic.c	/^			char *service_ptr = strstr(payload, "\\"service_id\\":\\"");$/;"	l
+sessionPresent	src/mqtt_client.c	/^	bool sessionPresent;$/;"	l
+ssl_err	src/network.c	/^	int ssl_err = SSL_get_error(networkContext.ssl, received);$/;"	l
+ssl_err	src/network.c	/^	int ssl_err = SSL_get_error(networkContext.ssl, sent);$/;"	l
+status	src/app_logic.c	/^	MQTTStatus_t status = MQTT_Publish(get_mqtt_context(), &pubInfo, 0);$/;"	l
+status	src/app_logic.c	/^	MQTTStatus_t status = MQTT_Publish(get_mqtt_context(), &respInfo, 0);$/;"	l
+status	src/mqtt_client.c	/^		MQTTStatus_t status = MQTT_ProcessLoop(&mqttContext);$/;"	l
+status	src/mqtt_client.c	/^	MQTTStatus_t status = MQTTSuccess;  $/;"	l
+status	src/mqtt_client.c	/^	MQTTStatus_t status = MQTT_Connect(&mqttContext, &connectInfo, NULL, $/;"	l
+status	src/mqtt_client.c	/^	MQTTStatus_t status = MQTT_Subscribe(&mqttContext, &subInfo, 1, SUBSCRIBE_TIMEOUT_MS);$/;"	l
+subInfo	src/mqtt_client.c	/^	MQTTSubscribeInfo_t subInfo = {$/;"	l
+switch_ptr	src/app_logic.c	/^			char *switch_ptr = strstr(payload, "\\"Switch\\":\\"");$/;"	l
+switch_state	src/app_logic.c	/^				char switch_state[8] = {0};$/;"	l
+temperature	src/app_logic.c	/^	float temperature = 25.66;$/;"	l
+topic	src/app_logic.c	/^		const char *topic = deserializedInfo->pPublishInfo->pTopicName;$/;"	l
+topicLen	src/app_logic.c	/^		int topicLen = (int)deserializedInfo->pPublishInfo->topicNameLength;$/;"	l
+transport	src/mqtt_client.c	/^	TransportInterface_t transport = {$/;"	l
+ts	src/mqtt_client.c	/^	struct timespec ts;$/;"	l
